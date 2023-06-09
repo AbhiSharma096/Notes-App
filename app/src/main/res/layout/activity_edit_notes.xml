@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".EditNotes">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/backButton"
+                android:src="@drawable/baseline_arrow_back_ios_24"
+                android:background="@null"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Edit Notes"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/saveButton"
+                android:src="@drawable/baseline_done_24"
+                android:background="@null"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                />
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextTitle"
+        android:hint="Title"
+        android:background="@null"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:id="@+id/editTextDescription"
+        android:hint="Title"
+        android:background="@null"
+        android:gravity="top"
+        android:lineSpacingMultiplier="1.8"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+
+
+
+</LinearLayout>
